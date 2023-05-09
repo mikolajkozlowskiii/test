@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-
+//ee
 @Repository
 public interface LeagueRepository extends JpaRepository<League, Long> {
     @Query("SELECT l FROM League l LEFT JOIN FETCH l.teams WHERE l.id = (:id)")
